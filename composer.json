@@ -1,0 +1,37 @@
+{
+    "name": "Thunderkiss52/laravel-permission",
+    "version": "1.0.1",
+    "require": {
+        "php": ">=8.2",
+        "spatie/laravel-model-info": "^2.0",
+        "laravel/framework": "^11.0",
+        "spatie/laravel-data": "^4.8",
+        "spatie/laravel-package-tools": "^1.16"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Thunderkiss52\\LaravelPermission\\PermissionProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Thunderkiss52\\LaravelPermission\\": "src/"
+        }
+    },
+    "scripts": {
+        "analyse": "vendor/bin/phpstan analyse",
+        "baseline": "vendor/bin/phpstan analyse --generate-baseline",
+        "test": "vendor/bin/pest"
+    },
+    "authors": [
+        {
+            "name": "Thunderkiss52",
+            "email": "Thunderkiss52@gmail.com"
+        }
+    ]
+}
